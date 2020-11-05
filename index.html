@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>sms-code</title>
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel="stylesheet" href="css/min.normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </head>
+  <body class="page__body">
+    <h1 class="visually-hidden">Инновационный сервис смс-активаций Sms-code</h1>
+    <header class="page-header wow animate__animated animate__fadeInDown" data-wow-duration="0.5s" data-wow-delay="0.5s">
+      <nav class="page-header_nav site-menu col-xl-12 col-lg-12 container">
+        <a href="index.html">
+          <picture>
+            <source type="image/webp" srcset="img/logo.webp">
+            <img class="page-header_img" src="img/logo.png" alt="logo" width="200" height="80">
+          </picture>
+        </a>
+        <ul class="site-menu_list">
+          <li class="site-menu_item">
+            <a class="site-menu_link">О нас</a>
+          </li>
+          <li class="site-menu_item">
+            <a class="site-menu_link">Новости</a>
+          </li>
+          <li class="site-menu_item">
+            <a class="site-menu_link">Новости</a>
+          </li>
+          <li class="site-menu_item">
+            <a class="site-menu_link">Новости</a>
+          </li>
+          <li class="site-menu_item">
+            <a class="site-menu_link">Новости</a>
+          </li>
+        </ul>
+        <ul class="user-nav">
+          <li class="user-nav_item">
+            <a class="user-nav_link user-nav_link--sign-in">Войти</a>
+          </li>
+          <li class="user-nav_item">
+            <a class="user-nav_link user-nav_link--sign-up">Регистрация</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="page-main content container">
+      <section class="main-screen row">
+        <h2 class="visually-hidden">Получение номера</h2>
+        <aside class="main-screen col-xl-5 col-lg-5 wow animate__animated animate__fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.5s">
+          <form class="form" method="post">
+            <ul class="country-select">
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/ua.webp">
+                    <img src="img/ua.png" alt="ukraine" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="ukraine" checked="checked">
+                  Украина <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/ru.webp">
+                    <img src="img/ru.png" alt="russia" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="russia" disabled="disabled">
+                  Россия <span>(+7)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/fr.webp">
+                    <img src="img/fr.png" alt="france" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="france">
+                  Франция <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/china.webp">
+                    <img src="img/china.png" alt="china" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="china">
+                  Китай <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/mexico.webp">
+                    <img src="img/mexico.png" alt="mexico" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="mexico">
+                  Мексика <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/portu.webp">
+                    <img src="img/portu.png" alt="portugal" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="portugal">
+                  Португалия <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/argent.webp">
+                    <img src="img/argent.png" alt="argentina" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="argentina">
+                  Аргентина <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/uae.webp">
+                    <img src="img/uae.png" alt="uae" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="uae">
+                  ОАЭ <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/gb.webp">
+                    <img src="img/gb.png" alt="great britain" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="great-britain">
+                  Британия <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/usa.webp">
+                    <img src="img/usa.png" alt="usa" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="usa">
+                  США <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/japan.webp">
+                    <img src="img/japan.png" alt="japan" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="japan">
+                  Япония <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/brasil.webp">
+                    <img src="img/brasil.png" alt="brasil" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="brasil">
+                  Бразилия <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/germ.webp">
+                    <img src="img/germ.png" alt="german" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="german">
+                  Германия <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/italy.webp">
+                    <img src="img/italy.png" alt="italy" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="italy">
+                  Италия <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/spanish.webp">
+                    <img src="img/spanish.png" alt="spanish" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="spanish">
+                  Испания <span>(+380)</span>
+                </label>
+              </li>
+              <li class="country-select_item" tabindex="0">
+                <label class="country-select_item-label">
+                  <picture>
+                    <source type="image/webp" srcset="img/indonesia.webp">
+                    <img src="img/indonesia.png" alt="indonesia" width="35" height="35" class="country-select_item-img">
+                  </picture>
+                  <input class="country-select_item-input visually-hidden" type="radio" name="indonesia">
+                  Индонезия <span>(+380)</span>
+                </label>
+              </li>
+            </ul>
+            <div class="operator">
+              <select class="operator_list" name="operator">
+                <option class="operator_list-item" selected="selected" value="0">Любой оператор</option>
+                <option class="operator_list-item" value="1">Первый оператор</option>
+                <option class="operator_list-item" value="2">Второй оператор</option>
+                <option class="operator_list-item" value="3">Третий оператор</option>
+                <option class="operator_list-item" value="4">Четвертый оператор</option>
+              </select>
+            </div>
+            <ul class="services">
+              <li class="selected" tabindex="0">
+                <input class="selected_input visually-hidden" type="checkbox" id="selected" checked="checked">
+                <label class="selected_label" for="selected">Показать избранное</label>
+              </li>
+              <li class="services_item" tabindex="0">
+                <input class="services_item_input visually-hidden" type="checkbox" id="vk" checked="checked">
+                <div class="services_item_label">
+                  <div>
+                    <span class="star-checked"></span>
+                    <picture>
+                      <source type="image/webp" srcset="img/vk.webp">
+                      <img class="services_item_label-img" src="img/vk.png" alt="vk">
+                    </picture>
+                    <label class="services_item_label-header" for="vk">Вконтакте</label>
+                    <p class="services_item_label-price">600шт/<span>15руб</span></p>
+                  </div>
+                  <span class="services_item-unchecked"></span>
+                </div>
+              </li>
+              <li class="services_item" tabindex="0">
+                <input class="services_item_input visually-hidden" type="checkbox" id="twitter" checked="checked">
+                <div class="services_item_label">
+                  <div>
+                    <span class="star-unchecked"></span>
+                    <picture>
+                      <source type="image/webp" srcset="img/twitter.webp">
+                      <img class="services_item_label-img" src="img/twitter.png" alt="twitter">
+                    </picture>
+                    <label class="services_item_label-header" for="twitter">twitter</label>
+                    <p class="services_item_label-price">500шт/<span>10руб</span></p>
+                  </div>
+                  <span class="services_item-checked"></span>
+                </div>
+              </li>
+              <li class="services_item" tabindex="0">
+                <input class="services_item_input visually-hidden" type="checkbox" id="youtube" checked="checked">
+                <div class="services_item_label">
+                  <div>
+                    <span class="star-unchecked"></span>
+                    <picture>
+                      <source type="image/webp" srcset="img/youtube.webp">
+                      <img class="services_item_label-img" src="img/youtube.png" alt="youtube">
+                    </picture>
+                    <label class="services_item_label-header" for="youtube">twitter</label>
+                    <p class="services_item_label-price">500шт/<span>10руб</span></p>
+                  </div>
+                  <span class="services_item-checked"></span>
+                </div>
+              </li>
+              <li class="services_item" tabindex="0">
+                <input class="services_item_input visually-hidden" type="checkbox" id="facebook" checked="checked">
+                <div class="services_item_label">
+                  <div>
+                    <span class="star-unchecked"></span>
+                    <picture>
+                      <source type="image/webp" srcset="img/facebook.webp">
+                      <img class="services_item_label-img" src="img/facebook.png" alt="facebook">
+                    </picture>
+                    <label class="services_item_label-header" for="facebook">Facebook</label>
+                    <p class="services_item_label-price">200шт/<span>8руб</span></p>
+                  </div>
+                  <span class="services_item-checked"></span>
+                </div>
+              </li>
+              <li class="services_item" tabindex="0">
+                <input class="services_item_input visually-hidden" type="checkbox" id="instagram" checked="checked">
+                <div class="services_item_label">
+                  <div>
+                    <span class="star-unchecked"></span>
+                    <picture>
+                      <source type="image/webp" srcset="img/instagram.webp">
+                      <img class="services_item_label-img" src="img/instagram.png" alt="instagram">
+                    </picture>
+                    <label class="services_item_label-header" for="instagram">Instagram</label>
+                    <p class="services_item_label-price">100шт/<span>18руб</span></p>
+                  </div>
+                  <span class="services_item-checked"></span>
+                </div>
+              </li>
+              <li class="services_item" tabindex="0">
+                <input class="services_item_input visually-hidden" type="checkbox" id="mail" checked="checked">
+                <div class="services_item_label">
+                  <div>
+                    <span class="star-unchecked"></span>
+                    <picture>
+                      <source type="image/webp" srcset="img/mail.webp">
+                      <img class="services_item_label-img" src="img/mail.png" alt="mail">
+                    </picture>
+                    <label class="services_item_label-header" for="mail">Mail.ru</label>
+                    <p class="services_item_label-price">500шт/<span>10руб</span></p>
+                  </div>
+                  <span class="services_item-checked"></span>
+                </div>
+              </li>
+            </ul>
+          </form>
+        </aside>
+        <div class="col-xl-7 col-lg-7">
+          <section class="about-us">
+            <h2 class="about-us_title">О нас</h2>
+            <p class="about-us_subtitle">
+              Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот
+              обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не
+              получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст. Давно выяснено, что при оценке дизайна и композиции читаемый
+              текст мешает сосредоточиться. Lorem Ipsum используют потому.
+            </p>
+          </section>
+          <section class="news">
+            <h2 class="news_title">Новости</h2>
+            <ul class="news_list">
+              <li class="news_list-item">
+                <p class="news_list-item-data">20/09/2020</p>
+                <h3 class="news_list-item-header">Название новости</h3>
+                <p class="news_list-item-description">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+                  тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не
+                  получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.
+                </p>
+              </li>
+              <li class="news_list-item">
+                <p class="news_list-item-data">20/09/2020</p>
+                <h3 class="news_list-item-header">Название новости</h3>
+                <p class="news_list-item-description">Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что
+                  тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не
+                  получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.
+                </p>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer wow animate__animated animate__fadeInUp">
+      <div class="footer col-xl-12 col-lg-12 container">
+        <a class="page-footer_logo-link" href="#">
+          <picture>
+            <source type="image/webp" srcset="img/logo.webp">
+            <img class="" src="img/logo.png" alt="logo" width="200" height="80">
+          </picture>
+        </a>
+        <p class="page-footer_text">Все права защищены 2020</p>
+      </div>
+    </footer>
+    <!-- .modal прячет модальное окно
+      .modal-show показывает модальное окно -->
+    <!--  Вход -->
+    <section class="sign-in">
+      <h2 class="sign-in_title">Авторизация</h2>
+      <form class="sign-in_form" method="post">
+        <button type="button" class="modal-close" aria-label="закрыть"></button>
+        <input class="sign-in_input" type="text" placeholder="Имя пользователя" required>
+        <input class="sign-in_input" type="password" placeholder="Пароль" required><br>
+        <button type="submit" class="sign-in_button">Отправить</button>
+        <div>
+          <a class="forget-password" href="#">Забыли пароль?</a>
+          <a class="sign-in-link" href="#">Зарегистрироваться</a>
+        </div>
+      </form>
+    </section>
+    <!-- Регистрация -->
+    <section class="sign-in">
+      <h2 class="sign-in_title">Регистрация</h2>
+      <form class="sign-up_form" method="post">
+        <button type="button" class="modal-close" aria-label="закрыть"></button>
+        <input class="sign-in_input" type="text" placeholder="Имя пользователя" required>
+        <input class="sign-in_input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+        <input class="sign-in_input" type="password" placeholder="Пароль" required><br>
+        <button type="submit" class="sign-in_button">Готово</button>
+        <div>
+          <a class="sign-in-link" href="#">Уже есть аккаунт?</a>
+        </div>
+      </form>
+    </section>
+    <!-- Восстановить пароль -->
+    <section class="sign-in">
+      <h2 class="sign-in_title">Восстановить пароль</h2>
+      <form class="sign-up_form" method="post">
+        <button type="button" class="modal-close" aria-label="закрыть"></button>
+        <input class="sign-in_input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+        <button type="submit" class="sign-in_button">Получить код</button>
+      </form>
+    </section>
+    <!-- Ввести код -->
+    <section class="sign-in">
+      <h2 class="sign-in_title">Введите код</h2>
+      <form class="sign-up_form" method="post">
+        <button type="button" class="modal-close" aria-label="закрыть"></button>
+        <input class="sign-in_input" type="text" placeholder="Введите код" required>
+        <button type="submit" class="sign-in_button">Отправить</button>
+        <div>
+          <a class="sign-in-link" href="#">Не пришел код?</a>
+        </div>
+      </form>
+    </section>
+  </body>
+</html>
