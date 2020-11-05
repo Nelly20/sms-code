@@ -267,6 +267,7 @@ a {
 .services_item_label-price {
   margin-bottom: 0;
   margin-left: 30px;
+  margin-right: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
@@ -377,6 +378,9 @@ a {
   border: none; }
   .modal-close:hover {
     background-image: url("../img/close-hover.png"); }
+  .modal-close:focus {
+    outline: none;
+    background-image: url("../img/close-hover.png"); }
 
 .sign-in {
   position: relative;
@@ -415,6 +419,9 @@ a {
   border-radius: 10px; }
   .sign-in_button:hover {
     opacity: 0.7; }
+  .sign-in_button:focus {
+    background-color: #4f5665;
+    outline: none; }
 
 .sign-in_form div {
   display: flex;
@@ -434,6 +441,9 @@ a {
   text-decoration: underline; }
   .forget-password:hover {
     color: #c4c4c4; }
+  .forget-password:focus {
+    outline: none;
+    color: #0b132a; }
 
 .sign-in-link {
   font-weight: 400;
@@ -442,6 +452,9 @@ a {
   text-decoration: underline; }
   .sign-in-link:hover {
     color: #c4c4c4; }
+  .sign-in-link:focus {
+    outline: none;
+    color: #0b132a; }
 
 .modal {
   position: fixed;
