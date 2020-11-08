@@ -49,13 +49,14 @@
           </ul>
           <ul class="user-nav">
             <li class="user-nav_item">
-              <a class="user-nav_link user-nav_link--sign-in">Войти</a>
+              <a class="user-nav_link user-nav_link--sign-in" data-toggle="modal" data-target="#staticBackdrop">Войти</a>
             </li>
             <li class="user-nav_item">
-              <a class="user-nav_link user-nav_link--sign-up">Регистрация</a>
+              <a class="user-nav_link user-nav_link--sign-up" data-toggle="modal" data-target="#staticBackdroptwo">Регистрация</a>
             </li>
           </ul>
-        </div></nav>
+        </div>
+      </nav>
     </header>
     <main class="page-main content container">
       <section class="main-screen row">
@@ -265,13 +266,11 @@
                       <img class="services_item_label-img" src="img/twitter.png" alt="twitter">
                     </picture>
                     <label class="services_item_label-header" for="twitter">Twitter</label>
-
                   </div>
                   <div>
                     <p class="services_item_label-price">500шт/<span>10руб</span></p>
                     <span class="services_item-checked"></span>
                   </div>
-
                 </div>
               </li>
               <li class="services_item" tabindex="0">
@@ -392,54 +391,90 @@
     </footer>
     <!-- .modal прячет модальное окно
       .modal-show показывает модальное окно -->
-    <!--  Вход -->
-    <section class="sign-in">
-      <h2 class="sign-in_title">Авторизация</h2>
-      <form class="sign-in_form" method="post">
-        <button type="button" class="modal-close" aria-label="закрыть"></button>
-        <input class="sign-in_input" type="text" placeholder="Имя пользователя" required>
-        <input class="sign-in_input" type="password" placeholder="Пароль" required><br>
-        <button type="submit" class="sign-in_button">Отправить</button>
-        <div>
-          <a class="forget-password" href="#">Забыли пароль?</a>
-          <a class="sign-in-link" href="#">Зарегистрироваться</a>
+    <!-- Вход -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Авторизация</h5>
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="sign-in_input" type="text" placeholder="Имя пользователя" required>
+            <input class="sign-in_input" type="password" placeholder="Пароль" required><br>
+            <button type="submit" class="sign-in_button">Отправить</button>
+          </div>
+          <div class="modal-footer">
+            <a class="forget-password" href="#" data-toggle="modal" data-target="#staticBackdropthree">Забыли пароль?</a>
+            <a class="sign-in-link" href="#" data-toggle="modal" data-target="#staticBackdroptwo">Зарегистрироваться</a>
+          </div>
         </div>
-      </form>
-    </section>
+      </div>
+    </div>
     <!-- Регистрация -->
-    <section class="sign-in">
-      <h2 class="sign-in_title">Регистрация</h2>
-      <form class="sign-up_form" method="post">
-        <button type="button" class="modal-close" aria-label="закрыть"></button>
-        <input class="sign-in_input" type="text" placeholder="Имя пользователя" required>
-        <input class="sign-in_input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-        <input class="sign-in_input" type="password" placeholder="Пароль" required><br>
-        <button type="submit" class="sign-in_button">Готово</button>
-        <div>
-          <a class="sign-in-link" href="#">Уже есть аккаунт?</a>
+    <div class="modal fade" id="staticBackdroptwo" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabeltwo" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabeltwo">Регистрация</h5>
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="sign-in_input" type="text" placeholder="Имя пользователя" required>
+            <input class="sign-in_input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+            <input class="sign-in_input" type="password" placeholder="Пароль" required><br>
+            <button type="submit" class="sign-in_button">Готово</button>
+          </div>
+          <div class="modal-footer">
+          </div>
         </div>
-      </form>
-    </section>
+      </div>
+    </div>
     <!-- Восстановить пароль -->
-    <section class="sign-in">
-      <h2 class="sign-in_title">Восстановить пароль</h2>
-      <form class="sign-up_form" method="post">
-        <button type="button" class="modal-close" aria-label="закрыть"></button>
-        <input class="sign-in_input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
-        <button type="submit" class="sign-in_button">Получить код</button>
-      </form>
-    </section>
-    <!-- Ввести код -->
-    <section class="sign-in">
-      <h2 class="sign-in_title">Введите код</h2>
-      <form class="sign-up_form" method="post">
-        <button type="button" class="modal-close" aria-label="закрыть"></button>
-        <input class="sign-in_input" type="text" placeholder="Введите код" required>
-        <button type="submit" class="sign-in_button">Отправить</button>
-        <div>
-          <a class="sign-in-link" href="#">Не пришел код?</a>
+    <div class="modal fade" id="staticBackdropthree" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelthree" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabelthree">Восстановить пароль</h5>
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="sign-in_input" type="email" placeholder="Ваш e-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2, 4}$" required>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="sign-in_button" data-toggle="modal" data-target="#staticBackdropfour">Получить код</button>
+          </div>
         </div>
-      </form>
-    </section>
+      </div>
+    </div>
+    <!-- Ввести код -->
+    <div class="modal fade" id="staticBackdropfour" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabelfour" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabelfour">Введите код</h5>
+            <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true"></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <input class="sign-in_input" type="text" placeholder="Введите код" required>
+            <button type="submit" class="sign-in_button">Отправить</button>
+            <div>
+              <a class="sign-in-link" href="#">Не пришел код?</a>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="sign-in_button">Получить код</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
